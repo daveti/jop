@@ -1,0 +1,1364 @@
+run:
+lg4j:WARN No appenders could be found for logger (com.hp.hpl.jena.util.FileManager).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+ontModel=<ModelCom   {} | >
+baseModel=<ModelCom   {-71dfed4a:13aaa4a9238:-7ff6 @owl:hasValue :ThroughTheLens; -71dfed4a:13aaa4a9238:-7ff6 @owl:onProperty :viewFinder; -71dfed4a:13aaa4a9238:-7ff6 @rdf:type owl:Restriction; :cost @rdfs:range :Money; :cost @rdfs:domain :PurchaseableItem; :cost @rdf:type owl:ObjectProperty; :Viewer @owl:oneOf -71dfed4a:13aaa4a9238:-7ffc; :Viewer @rdf:type owl:Class; :body @rdfs:range :Body; :body @rdfs:domain :Camera; :body @rdfs:subPropertyOf :part; :body @rdf:type owl:ObjectProperty; :currency @rdfs:range xsd:string; :currency @rdfs:domain :Money; :currency @rdf:type owl:DatatypeProperty; :Body @rdfs:subClassOf :PurchaseableItem; :Body @rdf:type owl:Class...} | >
+======= Class =======
+------- NO.1 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Viewer
+URI=http://www.xfront.com/owl/ontologies/camera/#Viewer
+HasSuperClass=false
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=true
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+-Enumerated Class begins
+--IsOneOf begins
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=ThroughTheLens
+URI=http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens
+--IsOneOf ends
+--IsOneOf begins
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=WindowOnTopOfCamera
+URI=http://www.xfront.com/owl/ontologies/camera/#WindowOnTopOfCamera
+--IsOneOf ends
+-Enumerated Class ends
+---------------------
+------- NO.2 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Body
+URI=http://www.xfront.com/owl/ontologies/camera/#Body
+HasSuperClass=true
+-Super Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=PurchaseableItem
+URI=http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem
+-Super Classes end
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=cost
+URI=http://www.xfront.com/owl/ontologies/camera/#cost
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=shutter-speed
+URI=http://www.xfront.com/owl/ontologies/camera/#shutter-speed
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+---------------------
+------- NO.3 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Money
+URI=http://www.xfront.com/owl/ontologies/camera/#Money
+HasSuperClass=true
+-Super Classes begin:
+NameSpace=http://www.w3.org/2002/07/owl#
+LocalName=Thing
+URI=http://www.w3.org/2002/07/owl#Thing
+-Super Classes end
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=currency
+URI=http://www.xfront.com/owl/ontologies/camera/#currency
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+---------------------
+------- NO.4 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=SLR
+URI=http://www.xfront.com/owl/ontologies/camera/#SLR
+HasSuperClass=false
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=true
+isComplementClass=false
+isRestriction=false
+-Intersection Class begins
+--Operand begins
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+--Operand ends
+--Operand begins
+Restrictions:
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=true
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=viewFinder
+URI=http://www.xfront.com/owl/ontologies/camera/#viewFinder
+--onPropertyRestriction ends
+--hasValueRestriction begins:
+http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens
+--hasValueRestriction ends
+--Operand ends
+-Intersection Class ends
+---------------------
+------- NO.5 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Large-Format
+URI=http://www.xfront.com/owl/ontologies/camera/#Large-Format
+HasSuperClass=true
+-Super Classes begin:
+Restrictions:
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=true
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+--onPropertyRestriction ends
+--allValuesFromRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=BodyWithNonAdjustableShutterSpeed
+URI=http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed
+--allValuesFromRestriction ends
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+-Super Classes end
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=viewFinder
+URI=http://www.xfront.com/owl/ontologies/camera/#viewFinder
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=lens
+URI=http://www.xfront.com/owl/ontologies/camera/#lens
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=cost
+URI=http://www.xfront.com/owl/ontologies/camera/#cost
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+---------------------
+------- NO.6 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+HasSuperClass=true
+-Super Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=PurchaseableItem
+URI=http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem
+-Super Classes end
+HasSubClass=true
+-Sub Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Digital
+URI=http://www.xfront.com/owl/ontologies/camera/#Digital
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Large-Format
+URI=http://www.xfront.com/owl/ontologies/camera/#Large-Format
+-Sub Classes end
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=viewFinder
+URI=http://www.xfront.com/owl/ontologies/camera/#viewFinder
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=lens
+URI=http://www.xfront.com/owl/ontologies/camera/#lens
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=cost
+URI=http://www.xfront.com/owl/ontologies/camera/#cost
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+---------------------
+------- NO.7 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Window
+URI=http://www.xfront.com/owl/ontologies/camera/#Window
+HasSuperClass=true
+-Super Classes begin:
+NameSpace=http://www.w3.org/2002/07/owl#
+LocalName=Thing
+URI=http://www.w3.org/2002/07/owl#Thing
+-Super Classes end
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=true
+-Instances begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=WindowOnTopOfCamera
+URI=http://www.xfront.com/owl/ontologies/camera/#WindowOnTopOfCamera
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=ThroughTheLens
+URI=http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens
+-Instances end
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+---------------------
+------- NO.8 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+HasSuperClass=true
+-Super Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=PurchaseableItem
+URI=http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem
+-Super Classes end
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=f-stop
+URI=http://www.xfront.com/owl/ontologies/camera/#f-stop
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=compatibleWith
+URI=http://www.xfront.com/owl/ontologies/camera/#compatibleWith
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=focal-length
+URI=http://www.xfront.com/owl/ontologies/camera/#focal-length
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=size
+URI=http://www.xfront.com/owl/ontologies/camera/#size
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=cost
+URI=http://www.xfront.com/owl/ontologies/camera/#cost
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=aperture
+URI=http://www.xfront.com/owl/ontologies/camera/#aperture
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+---------------------
+------- NO.9 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Digital
+URI=http://www.xfront.com/owl/ontologies/camera/#Digital
+HasSuperClass=true
+-Super Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+-Super Classes end
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=viewFinder
+URI=http://www.xfront.com/owl/ontologies/camera/#viewFinder
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=lens
+URI=http://www.xfront.com/owl/ontologies/camera/#lens
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=cost
+URI=http://www.xfront.com/owl/ontologies/camera/#cost
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+---------------------
+------- NO.10 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Range
+URI=http://www.xfront.com/owl/ontologies/camera/#Range
+HasSuperClass=true
+-Super Classes begin:
+NameSpace=http://www.w3.org/2002/07/owl#
+LocalName=Thing
+URI=http://www.w3.org/2002/07/owl#Thing
+-Super Classes end
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=max
+URI=http://www.xfront.com/owl/ontologies/camera/#max
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=min
+URI=http://www.xfront.com/owl/ontologies/camera/#min
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=units
+URI=http://www.xfront.com/owl/ontologies/camera/#units
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+---------------------
+------- NO.11 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=BodyWithNonAdjustableShutterSpeed
+URI=http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed
+HasSuperClass=false
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=true
+isComplementClass=false
+isRestriction=false
+-Intersection Class begins
+--Operand begins
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Body
+URI=http://www.xfront.com/owl/ontologies/camera/#Body
+--Operand ends
+--Operand begins
+Restrictions:
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=true
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=shutter-speed
+URI=http://www.xfront.com/owl/ontologies/camera/#shutter-speed
+--onPropertyRestriction ends
+--cardinalityRestriction begins:
+0
+--cardinalityRestriction ends
+--Operand ends
+-Intersection Class ends
+---------------------
+------- NO.12 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=PurchaseableItem
+URI=http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem
+HasSuperClass=true
+-Super Classes begin:
+NameSpace=http://www.w3.org/2002/07/owl#
+LocalName=Thing
+URI=http://www.w3.org/2002/07/owl#Thing
+-Super Classes end
+HasSubClass=true
+-Sub Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Body
+URI=http://www.xfront.com/owl/ontologies/camera/#Body
+-Sub Classes end
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=cost
+URI=http://www.xfront.com/owl/ontologies/camera/#cost
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=false
+---------------------
+------- NO.13 -------
+Restrictions:
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=true
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+--onPropertyRestriction ends
+--allValuesFromRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=BodyWithNonAdjustableShutterSpeed
+URI=http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed
+--allValuesFromRestriction ends
+HasSuperClass=false
+HasSubClass=true
+-Sub Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Large-Format
+URI=http://www.xfront.com/owl/ontologies/camera/#Large-Format
+-Sub Classes end
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=true
+-Restriction begins
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=true
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+--onPropertyRestriction ends
+--allValuesFromRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=BodyWithNonAdjustableShutterSpeed
+URI=http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed
+--allValuesFromRestriction ends
+-Restriction ends
+---------------------
+------- NO.14 -------
+Restrictions:
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=true
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=viewFinder
+URI=http://www.xfront.com/owl/ontologies/camera/#viewFinder
+--onPropertyRestriction ends
+--hasValueRestriction begins:
+http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens
+--hasValueRestriction ends
+HasSuperClass=false
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=true
+-Restriction begins
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=true
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=viewFinder
+URI=http://www.xfront.com/owl/ontologies/camera/#viewFinder
+--onPropertyRestriction ends
+--hasValueRestriction begins:
+http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens
+--hasValueRestriction ends
+-Restriction ends
+---------------------
+------- NO.15 -------
+Restrictions:
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=true
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=shutter-speed
+URI=http://www.xfront.com/owl/ontologies/camera/#shutter-speed
+--onPropertyRestriction ends
+--cardinalityRestriction begins:
+0
+--cardinalityRestriction ends
+HasSuperClass=false
+HasSubClass=false
+HasEquivalentClass=false
+HasDisjointWithClass=false
+HasDeclaredProperty=true
+-Declared Properties begin
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Declared Properties end
+HasInstance=false
+isEnumeratedClass=false
+isUnionClass=false
+isIntersectionClass=false
+isComplementClass=false
+isRestriction=true
+-Restriction begins
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=true
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=shutter-speed
+URI=http://www.xfront.com/owl/ontologies/camera/#shutter-speed
+--onPropertyRestriction ends
+--cardinalityRestriction begins:
+0
+--cardinalityRestriction ends
+-Restriction ends
+---------------------
+======= 15 =======
+======= Property =======
+------- NO.1 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=shutter-speed
+URI=http://www.xfront.com/owl/ontologies/camera/#shutter-speed
+isFunctionalProperty=false
+isDatatypeProperty=false
+isObjectProperty=true
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Body
+URI=http://www.xfront.com/owl/ontologies/camera/#Body
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Range
+URI=http://www.xfront.com/owl/ontologies/camera/#Range
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Body
+URI=http://www.xfront.com/owl/ontologies/camera/#Body
+-Declaring Classes end
+HasReferringRestriction=true
+-Referring Restrictions begin
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=true
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=shutter-speed
+URI=http://www.xfront.com/owl/ontologies/camera/#shutter-speed
+--onPropertyRestriction ends
+--cardinalityRestriction begins:
+0
+--cardinalityRestriction ends
+-Referring Restrictions end
+---------------------
+------- NO.2 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=compatibleWith
+URI=http://www.xfront.com/owl/ontologies/camera/#compatibleWith
+isFunctionalProperty=false
+isDatatypeProperty=false
+isObjectProperty=true
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Body
+URI=http://www.xfront.com/owl/ontologies/camera/#Body
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.3 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=viewFinder
+URI=http://www.xfront.com/owl/ontologies/camera/#viewFinder
+isFunctionalProperty=true
+isDatatypeProperty=false
+isObjectProperty=true
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Viewer
+URI=http://www.xfront.com/owl/ontologies/camera/#Viewer
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Digital
+URI=http://www.xfront.com/owl/ontologies/camera/#Digital
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Large-Format
+URI=http://www.xfront.com/owl/ontologies/camera/#Large-Format
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+-Declaring Classes end
+HasReferringRestriction=true
+-Referring Restrictions begin
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=true
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=viewFinder
+URI=http://www.xfront.com/owl/ontologies/camera/#viewFinder
+--onPropertyRestriction ends
+--hasValueRestriction begins:
+http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens
+--hasValueRestriction ends
+-Referring Restrictions end
+---------------------
+------- NO.4 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+isFunctionalProperty=false
+isDatatypeProperty=false
+isObjectProperty=true
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Body
+URI=http://www.xfront.com/owl/ontologies/camera/#Body
+Ranges ends
+HasSuperProperty=true
+-Super Properties begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Super Properties end
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Digital
+URI=http://www.xfront.com/owl/ontologies/camera/#Digital
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Large-Format
+URI=http://www.xfront.com/owl/ontologies/camera/#Large-Format
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+-Declaring Classes end
+HasReferringRestriction=true
+-Referring Restrictions begin
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=true
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+--onPropertyRestriction ends
+--allValuesFromRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=BodyWithNonAdjustableShutterSpeed
+URI=http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed
+--allValuesFromRestriction ends
+-Referring Restrictions end
+---------------------
+------- NO.5 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=lens
+URI=http://www.xfront.com/owl/ontologies/camera/#lens
+isFunctionalProperty=false
+isDatatypeProperty=false
+isObjectProperty=true
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+Ranges ends
+HasSuperProperty=true
+-Super Properties begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+-Super Properties end
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Digital
+URI=http://www.xfront.com/owl/ontologies/camera/#Digital
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Large-Format
+URI=http://www.xfront.com/owl/ontologies/camera/#Large-Format
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.6 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=part
+URI=http://www.xfront.com/owl/ontologies/camera/#part
+isFunctionalProperty=false
+isDatatypeProperty=false
+isObjectProperty=true
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=false
+HasRange=false
+HasSuperProperty=false
+HasSubProperty=true
+-Sub Properties begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=lens
+URI=http://www.xfront.com/owl/ontologies/camera/#lens
+-Sub Properties end
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Viewer
+URI=http://www.xfront.com/owl/ontologies/camera/#Viewer
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Body
+URI=http://www.xfront.com/owl/ontologies/camera/#Body
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Money
+URI=http://www.xfront.com/owl/ontologies/camera/#Money
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=SLR
+URI=http://www.xfront.com/owl/ontologies/camera/#SLR
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Large-Format
+URI=http://www.xfront.com/owl/ontologies/camera/#Large-Format
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Window
+URI=http://www.xfront.com/owl/ontologies/camera/#Window
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Digital
+URI=http://www.xfront.com/owl/ontologies/camera/#Digital
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Range
+URI=http://www.xfront.com/owl/ontologies/camera/#Range
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=BodyWithNonAdjustableShutterSpeed
+URI=http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=PurchaseableItem
+URI=http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem
+Restrictions:
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=true
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=body
+URI=http://www.xfront.com/owl/ontologies/camera/#body
+--onPropertyRestriction ends
+--allValuesFromRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=BodyWithNonAdjustableShutterSpeed
+URI=http://www.xfront.com/owl/ontologies/camera/#BodyWithNonAdjustableShutterSpeed
+--allValuesFromRestriction ends
+Restrictions:
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=false
+---hasValueRestriction=true
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=viewFinder
+URI=http://www.xfront.com/owl/ontologies/camera/#viewFinder
+--onPropertyRestriction ends
+--hasValueRestriction begins:
+http://www.xfront.com/owl/ontologies/camera/#ThroughTheLens
+--hasValueRestriction ends
+Restrictions:
+---onPropertyRestriction=true
+---isAllValuesFromRestriction=false
+---someValuesFromRestriction=false
+---CardinalityRestriction=true
+---hasValueRestriction=false
+---isMaxCardinalityRestriction=false
+---isMinCardinalityRestriction=false
+--onPropertyRestriction begins:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=shutter-speed
+URI=http://www.xfront.com/owl/ontologies/camera/#shutter-speed
+--onPropertyRestriction ends
+--cardinalityRestriction begins:
+0
+--cardinalityRestriction ends
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.7 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=cost
+URI=http://www.xfront.com/owl/ontologies/camera/#cost
+isFunctionalProperty=false
+isDatatypeProperty=false
+isObjectProperty=true
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=PurchaseableItem
+URI=http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Money
+URI=http://www.xfront.com/owl/ontologies/camera/#Money
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=PurchaseableItem
+URI=http://www.xfront.com/owl/ontologies/camera/#PurchaseableItem
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Digital
+URI=http://www.xfront.com/owl/ontologies/camera/#Digital
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Large-Format
+URI=http://www.xfront.com/owl/ontologies/camera/#Large-Format
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Body
+URI=http://www.xfront.com/owl/ontologies/camera/#Body
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Camera
+URI=http://www.xfront.com/owl/ontologies/camera/#Camera
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.8 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=f-stop
+URI=http://www.xfront.com/owl/ontologies/camera/#f-stop
+isFunctionalProperty=false
+isDatatypeProperty=true
+isObjectProperty=false
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.w3.org/2001/XMLSchema#
+LocalName=string
+URI=http://www.w3.org/2001/XMLSchema#string
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=true
+-Equivalent Properties beign
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=aperture
+URI=http://www.xfront.com/owl/ontologies/camera/#aperture
+-Equivalent Properties end
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.9 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=focal-length
+URI=http://www.xfront.com/owl/ontologies/camera/#focal-length
+isFunctionalProperty=false
+isDatatypeProperty=true
+isObjectProperty=false
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.w3.org/2001/XMLSchema#
+LocalName=string
+URI=http://www.w3.org/2001/XMLSchema#string
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=true
+-Equivalent Properties beign
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=size
+URI=http://www.xfront.com/owl/ontologies/camera/#size
+-Equivalent Properties end
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.10 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=aperture
+URI=http://www.xfront.com/owl/ontologies/camera/#aperture
+isFunctionalProperty=false
+isDatatypeProperty=true
+isObjectProperty=false
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.w3.org/2001/XMLSchema#
+LocalName=string
+URI=http://www.w3.org/2001/XMLSchema#string
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.11 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=size
+URI=http://www.xfront.com/owl/ontologies/camera/#size
+isFunctionalProperty=false
+isDatatypeProperty=true
+isObjectProperty=false
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.w3.org/2001/XMLSchema#
+LocalName=string
+URI=http://www.w3.org/2001/XMLSchema#string
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Lens
+URI=http://www.xfront.com/owl/ontologies/camera/#Lens
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.12 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=units
+URI=http://www.xfront.com/owl/ontologies/camera/#units
+isFunctionalProperty=false
+isDatatypeProperty=true
+isObjectProperty=false
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Range
+URI=http://www.xfront.com/owl/ontologies/camera/#Range
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.w3.org/2001/XMLSchema#
+LocalName=string
+URI=http://www.w3.org/2001/XMLSchema#string
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Range
+URI=http://www.xfront.com/owl/ontologies/camera/#Range
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.13 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=max
+URI=http://www.xfront.com/owl/ontologies/camera/#max
+isFunctionalProperty=false
+isDatatypeProperty=true
+isObjectProperty=false
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Range
+URI=http://www.xfront.com/owl/ontologies/camera/#Range
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.w3.org/2001/XMLSchema#
+LocalName=float
+URI=http://www.w3.org/2001/XMLSchema#float
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Range
+URI=http://www.xfront.com/owl/ontologies/camera/#Range
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.14 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=min
+URI=http://www.xfront.com/owl/ontologies/camera/#min
+isFunctionalProperty=false
+isDatatypeProperty=true
+isObjectProperty=false
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Range
+URI=http://www.xfront.com/owl/ontologies/camera/#Range
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.w3.org/2001/XMLSchema#
+LocalName=float
+URI=http://www.w3.org/2001/XMLSchema#float
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Range
+URI=http://www.xfront.com/owl/ontologies/camera/#Range
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+------- NO.15 -------
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=currency
+URI=http://www.xfront.com/owl/ontologies/camera/#currency
+isFunctionalProperty=false
+isDatatypeProperty=true
+isObjectProperty=false
+isInverseFunctionalProperty=false
+isSymmetricProperty=false
+isTransitiveProperty=false
+HasDomain=true
+Domains begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Money
+URI=http://www.xfront.com/owl/ontologies/camera/#Money
+Domains end
+HasRange=true
+Ranges begin:
+NameSpace=http://www.w3.org/2001/XMLSchema#
+LocalName=string
+URI=http://www.w3.org/2001/XMLSchema#string
+Ranges ends
+HasSuperProperty=false
+HasSubProperty=false
+HasEquivalentProperty=false
+HasInverseOfProperty=false
+HasInverseProperty=false
+HasDeclaringClass=true
+-Declaring Classes begin:
+NameSpace=http://www.xfront.com/owl/ontologies/camera/#
+LocalName=Money
+URI=http://www.xfront.com/owl/ontologies/camera/#Money
+-Declaring Classes end
+HasReferringRestriction=false
+---------------------
+======= 15 =======
+BUILD SUCCESSFUL (total time: 2 seconds)

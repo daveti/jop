@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	 xmlns:owl="http://www.w3.org/2002/07/owl#"
+	 xmlns="http://www.xfront.com/owl/ontologies/camera/#"
+	 xmlns:camera="http://www.xfront.com/owl/ontologies/camera/#"
+	 xml:base="http://www.xfront.com/owl/ontologies/camera/">
+    <owl:Ontology rdf:about="">
+        <rdfs:comment>
+        Camera OWL Ontology                           
+      Author: Roger L. Costello                                   
+      Acknowlegements: Many thanks to the following people for    
+                       their invaluable input:                    
+                          Richard McCullough, Yuzhong Qu,         
+                          Leo Sauermann, Brian McBride and        
+                          Jim Farrugia.                           
+        </rdfs:comment>
+    </owl:Ontology>
+
+[Class NO.3]
+[SuperClass Thing]
+[DeclaredProperty currency part]
+     <owl:Class rdf:ID="Money">
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+     </owl:Class>
+
+[Property NO.15]
+[DatatypeProperty]
+[Domain Money]
+[Range string]
+[DeclaringClass Money]
+     <owl:DatatypeProperty rdf:ID="currency">
+          <rdfs:domain rdf:resource="#Money"/>
+          <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+     </owl:DatatypeProperty>
+
+[Class NO.10]
+[SuperClass Thing]
+[DeclaredProperty max min units part]
+     <owl:Class rdf:ID="Range">
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+     </owl:Class>
+
+[Property NO.14]
+[DatatypeProperty]
+[Domain Range]
+[Range float]
+[DeclaringClass Range]
+     <owl:DatatypeProperty rdf:ID="min">
+          <rdfs:domain rdf:resource="#Range"/>
+          <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+     </owl:DatatypeProperty>
+
+[Property NO.13]
+[DatatypeProperty]
+[Domain Range]
+[Range float]
+[DeclaringClass Range]
+     <owl:DatatypeProperty rdf:ID="max">
+          <rdfs:domain rdf:resource="#Range"/>
+          <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+     </owl:DatatypeProperty>
+
+[Property NO.12]
+[DatatypeProperty]
+[Domain Range]
+[Range string]
+[DeclaringCalss Range]
+     <owl:DatatypeProperty rdf:ID="units">
+          <rdfs:domain rdf:resource="#Range"/>
+          <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+     </owl:DatatypeProperty>
+
+[Class NO.7]
+[SuperClass Thing]
+[DeclaredProperty part]
+[Instance WindowOnTopOfCamera ThroughTheLens]
+     <owl:Class rdf:ID="Window">
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+     </owl:Class>
+     <camera:Window rdf:ID="ThroughTheLens"/>
+     <camera:Window rdf:ID="WindowOnTopOfCamera"/>
+
+[Class NO.1]
+[DeclaredProperty part]
+[EnumeratedClass ThroughTheLens WindowOnTopOfCamera]
+     <owl:Class rdf:ID="Viewer">
+         <owl:oneOf rdf:parseType="Collection">
+               <camera:Window rdf:about="#ThroughTheLens"/>
+               <camera:Window rdf:about="#WindowOnTopOfCamera"/>
+          </owl:oneOf>
+     </owl:Class>
+
+[Class NO.12]
+[SuperClass Thing]
+[SubClass Camera Lens Body]
+[DeclaredProperty cost part]
+     <owl:Class rdf:ID="PurchaseableItem">
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+     </owl:Class>
+
+[Property NO.7]
+[ObjectProperty]
+[Domain PurchaseableItem]
+[Range Money]
+[DeclaringClass Lens PurchaseableItem Digital Large-Format Body Camera]
+     <owl:ObjectProperty rdf:ID="cost">
+          <rdfs:domain rdf:resource="#PurchaseableItem"/>
+          <rdfs:range rdf:resource="#Money"/>
+     </owl:ObjectProperty>
+
+[Class NO.1]
+[SuperClass PurchaseableItem]
+[DeclaredProperty cost part shutter-speed]
+     <owl:Class rdf:ID="Body">
+          <rdfs:subClassOf rdf:resource="#PurchaseableItem"/>
+     </owl:Class>
+
+[Class NO.11]
+[DeclaredProperty part]
+[IntersectionClass body [Restriction [onProperty shutter-speed] [cardinality 0]]]
+     <owl:Class rdf:ID="BodyWithNonAdjustableShutterSpeed">
+          <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class rdf:about="#Body"/>
+[Class NO.15]
+[Restriction [onProperty shutter-speed] [cardinality 0]]
+[DeclaredProperty part]
+               <owl:Restriction>
+                     <owl:onProperty rdf:resource="#shutter-speed"/>
+                     <owl:cardinality>0</owl:cardinality>
+               </owl:Restriction>
+          </owl:intersectionOf>
+     </owl:Class>
+
+[Class NO.8]
+[SuperClass PurchaseableItem]
+[DeclaredProperty f-stop compatibleWith focal-length size cost part aperture]
+     <owl:Class rdf:ID="Lens">
+          <rdfs:subClassOf rdf:resource="#PurchaseableItem"/>
+     </owl:Class>
+
+[Class NO.6]
+[SuperClass PurchaseableItem]
+[SubClass Digital Large-Format]
+[DeclaredProperty viewFinder body lens cost part]
+     <owl:Class rdf:ID="Camera">
+          <rdfs:subClassOf rdf:resource="#PurchaseableItem"/>
+     </owl:Class>
+
+[Class NO.4]
+[DeclaredProperty part]
+[IntersectionClass Camera [Restriction [onProperty viewFinder] [hasValue ThroughTheLens]]]
+     <owl:Class rdf:ID="SLR">
+          <owl:intersectionOf rdf:parseType="Collection">
+               <owl:Class rdf:about="#Camera"/>
+[Class NO.14]
+[Restriction [onProperty viewFinder] [hasValue ThroughTheLens]]
+[DeclaredProperty part]
+               <owl:Restriction>
+                     <owl:onProperty rdf:resource="#viewFinder"/>
+                     <owl:hasValue rdf:resource="#ThroughTheLens"/>
+               </owl:Restriction>
+          </owl:intersectionOf>
+     </owl:Class>
+
+[Class NO.5]
+[SuperClass [Restriction [onProperty body] [allValuesFrom BodyWithNonAdjustableShutterSpeed]] Camera]
+[DeclaredProperty viewFinder body lens cost part]
+     <owl:Class rdf:ID="Large-Format">
+          <rdfs:subClassOf rdf:resource="#Camera"/>
+          <rdfs:subClassOf>
+[Class NO.13]
+[Restriction [onProperty body] [allValuesFrom BodyWithNonAdjustableShutterSpeed]]
+[SubClass Large-Format]
+[DeclaredProperty part]
+               <owl:Restriction>
+                     <owl:onProperty rdf:resource="#body"/>
+                     <owl:allValuesFrom rdf:resource="#BodyWithNonAdjustableShutterSpeed"/>
+               </owl:Restriction>
+          </rdfs:subClassOf>
+     </owl:Class>
+
+[Class NO.9]
+[SuperClass Camera]
+[DeclaredProperty viewFinder body lens cost part]
+     <owl:Class rdf:ID="Digital">
+          <rdfs:subClassOf rdf:resource="#Camera"/>
+     </owl:Class>
+
+[Property NO.6]
+[ObjectProperty]
+[SubProperty body lens]
+[DeclaringClass Viewer Body Money SLR Large-Format Camera Window Lens Digital Range BodyWithNonAdjustableShutterSpeed PurchaseableItem [Restriction [onProperty body] [allValuesFrom BodyWithNonAdjustableShutterSpeed]] [Restriction [onProperty viewFinder] [hasValue ThroughTheLens]] [Restriction [onProperty shutter-speed] [cardinality 0]]]
+     <owl:ObjectProperty rdf:ID="part"/>
+
+[Property NO.5]
+[ObjectProperty]
+[Domain Camera]
+[Range Lens]
+[SuperProperty part]
+[DeclaringClass Digital Large-Format Camera]
+     <owl:ObjectProperty rdf:ID="lens">
+          <rdfs:subPropertyOf rdf:resource="#part"/>
+          <rdfs:domain rdf:resource="#Camera"/>
+          <rdfs:range rdf:resource="#Lens"/>
+     </owl:ObjectProperty>
+
+[Property NO.4]
+[ObjectProperty]
+[Domain Camera]
+[Range Body]
+[SuperProperty part]
+[DeclaringClass Digital Large-Format Camera]
+[ReferringRestriction [onProperty body] [allValuesFrom BodyWithNonAdjustableShutterSpeed]]
+     <owl:ObjectProperty rdf:ID="body">
+          <rdfs:subPropertyOf rdf:resource="#part"/>
+          <rdfs:domain rdf:resource="#Camera"/>
+          <rdfs:range rdf:resource="#Body"/>
+     </owl:ObjectProperty>
+
+[Property NO.3]
+[ObjectProperty FunctionalProperty]
+[Domain Camera]
+[Range Viewer]
+[DeclaringClass Digital Large-Format Camera]
+[ReferringRestriction [onProperty viewFinder] [hasValue ThroughTheLens]]
+     <owl:ObjectProperty rdf:ID="viewFinder">
+          <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+          <rdfs:domain rdf:resource="#Camera"/>
+          <rdfs:range rdf:resource="#Viewer"/>
+     </owl:ObjectProperty>
+
+[Property NO.11]
+[DatatypeProperty]
+[Domain Lens]
+[Range string]
+[DeclaringClass Lens]
+     <owl:DatatypeProperty rdf:ID="size">
+          <rdfs:domain rdf:resource="#Lens"/>
+          <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+     </owl:DatatypeProperty>
+
+[Property NO.10]
+[DatatypeProperty]
+[Domain Lens]
+[Range string]
+[DeclaringClass Lens]
+     <owl:DatatypeProperty rdf:ID="aperture">
+          <rdfs:domain rdf:resource="#Lens"/>
+          <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+     </owl:DatatypeProperty>
+
+[Property NO.2]
+[ObjectProperty]
+[Domain Lens]
+[Range Body]
+[DeclaringClass Lens]
+     <owl:ObjectProperty rdf:ID="compatibleWith">
+          <rdfs:domain rdf:resource="#Lens"/>
+          <rdfs:range rdf:resource="#Body"/>
+     </owl:ObjectProperty>
+
+[Property NO.1]
+[ObjectProperty]
+[Domain Body]
+[Range Range]
+[DeclaringClass Body]
+[ReferringRestriction [onProperty shutter-speed] [cardinality 0]]
+     <owl:ObjectProperty rdf:ID="shutter-speed">
+          <rdfs:domain rdf:resource="#Body"/>
+          <rdfs:range rdf:resource="#Range"/>
+     </owl:ObjectProperty>
+
+[Property NO.9]
+[DatatypeProperty]
+[Domain Lens]
+[Range string]
+[EquivalentProperty size]
+[DeclaringClass Lens]
+     <owl:DatatypeProperty rdf:ID="focal-length">
+          <owl:equivalentProperty rdf:resource="#size"/>
+          <rdfs:domain rdf:resource="#Lens"/>
+          <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+     </owl:DatatypeProperty>
+
+[Property NO.8]
+[DatatypeProperty]
+[Domain Lens]
+[Range string]
+[EquivalentProperty aperture]
+[DeclaringClass Lens]
+     <owl:DatatypeProperty rdf:ID="f-stop">
+          <owl:equivalentProperty rdf:resource="#aperture"/>
+          <rdfs:domain rdf:resource="#Lens"/>
+          <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+     </owl:DatatypeProperty>
+
+</rdf:RDF>
